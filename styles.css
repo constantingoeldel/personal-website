@@ -1,0 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 112.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
