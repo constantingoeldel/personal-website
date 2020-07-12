@@ -29,9 +29,14 @@ header,footer{
     text-align: center;
     
 }
+header{
+    display: grid;
+
+}
 main {
     display: grid;
     grid-template-columns: 100%;
+    margin-bottom: 20px;
 }
 .pictures {
     display: flex;
@@ -55,11 +60,11 @@ main {
     opacity: 20%;
 }
 nav {
-    
+
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 420px) {
     main {
         grid-template-columns: auto min-content;
         grid-auto-flow: dense;
