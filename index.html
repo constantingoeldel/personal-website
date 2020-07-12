@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header id="top">
+    <header>
         <h1>Constantin Goeldel</h1>
-        <h2>Meine persönliche Website</h2>
-        <nav>
-         <a href="#interests">Interessen</a>
-         <a href="#contact">Kontakt</a>
-         <a href="#bio">Biographie</a>
-         <a href="#cv">Lebenslauf</a>
-        </nav>
     </header>
+    <nav>
+     <a class="navball" href="#bio">Biographie</a>
+     <a class="navball" href="#interests">Interessen</a>
+     <a class="navball" href="#cv">Lebenslauf</a>
+     <a class="navball" href="#contact">Kontakt</a>
+    </nav>
     <main>
-        <section id="pictures">
-            <img src="img/IMG_0916.jpg" alt="Bild von Constantin Goeldel">
+        <section class="pictures">
+            <img class="img" src="img/boat.jpg" alt="Bild mit zwei Personen">
+            <img class="img" src="img/aufforstung(1).jpg" alt="Bild von Constantin Goeldel">
+            <img class="img" src="img/ezgif.com-optimize(2).gif" alt="Video von Luftaufnahme von zwei Personen">
+        </section> 
+        <section id="bio" class="bio">
+            <h2>Biographie</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.    </p>
         </section>
-        <section id="interests">
-            <h2>Dafür interessiere ich mich:</h2>
+        <section id="interests" class="interests">
+            <h2>Interessen</h2>
             <ul>
                 <li>Politik, Wirtschaft, Klimaschutz</li>
                 <li>3D-Druck</li>
@@ -31,25 +38,21 @@
                 <li>Coding natürlich, sonst wäre ich ja nicht hier :)</li>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Über diese <a href="mailto:constantin_goeldel@t-online.de">Email</a>  kannst du mich erreichen</p>
-            <h3>Sonst auch über diese Kanäle:</h3>
-            <a href="https://www.github.com/constantingoeldel" rel="noreferal noopener" target="_blank"><img src="img/GitHub_Logo.png" alt="GitHub"></a>
-            <a href="https://www.codepen.io/constigoe" rel="noreferal noopener" target="_blank"><img src="img/codepen.png" alt="Codepen"></a>
-        </section>
-        <section id="bio">
-            <h2>Biographie</h2>
-            <p> </p>
-        </section>
-        <section id="cv">
-            <h3>Lebenslauf</h3>
+        <section id="cv" class="cv">
+            <h2>Lebenslauf</h2>
             <ul>
                 <li>Geboren am 14. September 2002 in Hamburg</li>
                 <li>Grundschule Winterhuder Weg</li>
                 <li>Gelehrtenschule des Johanneums - Abitur 2020</li>
                 <li>Jetzt Coding bei NeueFische, bin gespannt was danach kommt!</li>
             </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <a href="https://www.github.com/constantingoeldel" rel="noreferal noopener" target="_blank"><img src="img/github-cirlce.png" alt="GitHub"></a>
+            <a href="https://www.codepen.io/constigoe" rel="noreferal noopener" target="_blank"><img src="img/codepen-cirlce.png" alt="Codepen"></a>
+            <a href="tel:+4915202510229"><img src="img/phone-cirlce.png" alt="Telephone"></a>
+            <a href="mailto:constantin_goeldel@t-online.de"><img src="img/email-cirlce.png" alt="Email"></a>
         </section>
     </main>
     <footer>

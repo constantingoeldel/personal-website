@@ -3,5 +3,27 @@
 }
 body {
     font-size: 112.5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    top: 0;
+}
+h1{
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+main {
+    display: grid;
+}
+header {
+    width: 100%;
+    background-color: lightslategray;
+    padding: 10px;
+    text-align: center;
+}
+.pictures {
+    display: flex;
+    overflow: scroll;
 }
