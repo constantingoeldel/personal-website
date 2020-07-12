@@ -10,28 +10,52 @@ body {
 }
 h1{
     margin: 0;
+    grid-column: 1/-1;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h2 {
     font-family: 'Montserrat Subrayada', sans-serif;
-    background: lightsteelblue;
+    background: #70eb67;
     padding: 10px;
     margin-left: 15px;
+    top: 93px;
+    /*z-index: -1;
+    position: relative ;*/
 }
 p{
     padding: 10px;
     margin-left: 10px;
 }
+.break{
+    display: inline;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
 header,footer{
     width: 100%;
-    background-color: lightslategray;
+    background-color: grey;
     padding: 10px;
     text-align: center;
-    
 }
 header{
     display: grid;
-
+    position: sticky;
+    top: 0;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.nav1{
+    grid-row: 2;
+    grid-column: 1;
+}
+.nav2{
+    grid-row: 2;
+    grid-column: 2;
 }
 main {
     display: grid;
@@ -59,10 +83,21 @@ main {
 .logo:hover {
     opacity: 20%;
 }
-nav {
-
+.nav-item {
+    color: white;
+    text-decoration: none;
 }
-
+.nav-item:hover{
+    text-decoration: underline;
+}
+@media (max-width: 419px) {
+    h2 {
+        position: sticky;
+    }
+    .nav-item{
+        font-size: 80%;
+    }
+}
 
 @media (min-width: 420px) {
     main {
@@ -77,5 +112,21 @@ nav {
         margin-top: 12px;
     }
 
+    .nav1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .nav2{
+        grid-column: -1;
+        grid-row: 1;
+    }
+    header{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    
+    }
+    h1{
+        grid-column: 2;
+    }
 }
 
