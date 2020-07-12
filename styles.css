@@ -6,6 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     top: 0;
+    width: 100%;
 }
 h1{
     margin: 0;
@@ -13,17 +14,63 @@ h1{
 
 h2 {
     font-family: 'Montserrat Subrayada', sans-serif;
+    background: lightsteelblue;
+    padding: 10px;
+    margin-left: 15px;
 }
-main {
-    display: grid;
+p{
+    padding: 10px;
+    margin-left: 10px;
 }
-header {
+header,footer{
     width: 100%;
     background-color: lightslategray;
     padding: 10px;
     text-align: center;
+    
+}
+main {
+    display: grid;
+    grid-template-columns: 100%;
 }
 .pictures {
     display: flex;
     overflow: scroll;
+    scroll-snap-type: x mandatory;
+   /* margin-left: -75%; */
 }
+.img {
+    margin: 10px;
+    min-width: 300px;
+    max-width: 300px;
+    scroll-snap-align: center;
+}
+.contact > div{
+    display: flex;
+    max-width: 375px;
+    justify-content: center;
+
+}
+.logo:hover {
+    opacity: 20%;
+}
+nav {
+    
+}
+
+
+@media (min-width: 400px) {
+    main {
+        grid-template-columns: auto min-content;
+        grid-auto-flow: dense;
+        column-gap: 20px;
+    }
+    .pictures {
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 1/span 4;
+        margin-top: 12px;
+    }
+
+}
+
