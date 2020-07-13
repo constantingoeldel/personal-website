@@ -27,6 +27,7 @@ h2 {
 p{
     padding: 10px;
     margin-left: 10px;
+    margin-right: 5px;
 }
 .break{
     display: inline;
@@ -91,6 +92,8 @@ button{
     border-radius: 5px;
     box-shadow: none;
     margin: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 button:hover {
     opacity: 70%;
