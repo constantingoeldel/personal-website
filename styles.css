@@ -83,6 +83,18 @@ main {
 .logo:hover {
     opacity: 20%;
 }
+button{
+    background-color:#70eb67;
+    color: white;
+    font-size: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 5px;
+}
+button:hover {
+    opacity: 70%;
+}
 .nav-item {
     color: white;
     text-decoration: none;
